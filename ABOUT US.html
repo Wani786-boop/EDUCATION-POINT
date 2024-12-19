@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Point</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="logo.png">
+    <style>
+        /* Body and overall layout */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1b1b1b;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #333;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .neon-title {
+            font-size: 2.5rem;
+            color: #fff;
+            text-shadow: 0 0 10px #ff0088, 0 0 20px #ff0088, 0 0 30px #ff0088, 0 0 40px #ff0088;
+            animation: neon-animation 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes neon-animation {
+            0% {
+                text-shadow: 0 0 10px #ff0088, 0 0 20px #ff0088, 0 0 30px #ff0088, 0 0 40px #ff0088;
+            }
+            100% {
+                text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff, 0 0 50px #00ffff;
+            }
+        }
+
+        .neon-button {
+            background-color: transparent;
+            border: 2px solid #fff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1rem;
+            text-transform: uppercase;
+            border-radius: 5px;
+            margin: 10px 0;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .neon-button:hover {
+            background-color: #fff;
+            color: #1b1b1b;
+            box-shadow: 0 0 10px #ff0088, 0 0 20px #ff0088;
+        }
+
+        .neon-heading {
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 30px;
+            color: #ff0088;
+            text-shadow: 0 0 10px #ff0088, 0 0 20px #ff0088;
+        }
+
+        /* Main content area */
+        .section {
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .resource-card {
+            margin: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            .neon-title {
+                font-size: 2rem;
+            }
+            .neon-button {
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="neon-title">MUHAMMAD RIZWAN</h1>
+            <a href="index.html" class="neon-button">Back to Home</a>
+        </div>
+    </header>
+    <main class="section">
+        <h2 class="neon-heading">ABOUT ME</h2>
+        <div class="resource-card">
+            <a href="about me.html" class="neon-button">ABOUT ME</a>
+        </div>
+        <div class="resource-card">
+            <a href="contact me.html" class="neon-button">CONTACT ME</a>
+        </div>
+        <div class="resource-card">
+            <a href="whatsapp channel.html" class="neon-button">CHANNEL</a>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Education Point. All rights reserved. | MUHAMMAD RIZWAN</p>
+    </footer>
+</body>
+</html>
